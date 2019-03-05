@@ -8,10 +8,18 @@ const sixDigit = /^\d{6}$/;
 
 const patterns = {
   AD: /^(AD\d{3}|\d{5})$/,
+  AM: fourDigit,
+  AR: fourDigit,
+  AS: fiveDigit,
   AT: fourDigit,
   AU: fourDigit,
+  AZ: /^(\d{6}|\d{4})$/,
+  BA: fiveDigit,
+  BD: fourDigit,
   BE: fourDigit,
   BG: fourDigit,
+  BN: /^[A-Z]{2}[0-9]{4}$/,
+  BR: /^([0-9]{5}|[0-9]{5}-[0-9]{3}|[0-9]{8})$/,
   CA: /^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][\s\-]?\d[ABCEGHJ-NPRSTV-Z]\d$/i,
   CH: fourDigit,
   CZ: /^\d{3}\s?\d{2}$/,
